@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+  <!-- 합쳐지고 최소화된 최신 CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+
+  <!-- 부가적인 테마 -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
+
+  <!-- 합쳐지고 최소화된 최신 자바스크립트 -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+  <style>
+    body {
+      padding: 0;
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+      height: 100vh;
+      background-color:rgba(233,233,137,0.5);
+    }
+
+    section {
+      width: 100%;
+      height: 100px;
+      flex: 1;
+      overflow-x: hidden;
+      overflow-y: hidden;
+    }
+
+    nav.navbar {
+      height: 100px;
+      margin: 0;
+    }
+
+    .container,
+    .container * {
+      height: 100%;
+    }
+
+    ul.nav>li>a {
+      padding: 0 20px 0 20px;
+      line-height: 100px;
+    }
+
+    .navbar-brand {
+      padding: 0 20px 0 20px;
+      line-height: 100px;
+    }
+
+    .dropdown-menu>li {
+      height: 50px;
+    }
+
+    .navbar-nav>li>.dropdown-menu {
+      background-color: rgba(0, 0, 0, 0);
+      border: 0;
+      box-shadow: none;
+    }
+
+    .nav .open>a,
+    .nav .open>a:focus,
+    .nav .open>a:hover,
+    .nav>li>a:focus,
+    .nav>li>a:hover {
+      background: rgba(256, 100, 100, 0.3);
+    }
+
+    .fontSize30 {
+      font-size: 30px;
+    }
+
+    .fontSize20 {
+      font-size: 20px;
+    }
+
+    .fontSize15 {
+      font-size: 15px;
+    }
+
+    ul.dropdown-menu li {
+      width: 155px;
+    }
+
+    .dropdown-menu>li>a:focus,
+    .dropdown-menu>li>a:hover {
+      background: rgba(256, 100, 100, 0.3);
+    }
+
+    .colorViolet {
+      color: rgba(150, 0, 150, 0.5) !important;
+    }
+
+    .strong {
+      font-weight: bolder !important;
+    }
+
+    .textShadow {
+      text-shadow: 4px 4px 4px rgba(53, 40, 40, 0.5) !important;
+    }
+    footer>div {
+      height: 100%;
+      line-height: 100px;
+    }
+    div {
+      box-sizing: border-box;
+    }
+    .flex-container {
+      display: flex;
+      flex-direction: column;
+    }
+    .flex-item {
+      padding: 10px;
+      flex-grow: 1;
+      height: 320px;
+    }
+    .flex-item img {
+      width: 100%;
+      height: 100%;
+    }
+    @media (min-width: 600px) {
+      .flex-container {
+        flex-direction: row;
+        flex-wrap: wrap;
+      }
+      .flex-item {
+        flex-basis: 25%;
+      }
+    }
+    @media (min-width: 900px) {
+      .flex-item {
+        flex-basis: 15%;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+  </header>
+  <section>
+    <div class="flex-container">
+      <div class="flex-item">
+        <img class="drag-item" src="blueCircleOpacity_1.png">
+      </div>
+      <div class="flex-item">
+        <img class="drag-item" src="beigeCircleOpacity_1.png">
+      </div>
+      <div class="flex-item">
+        <img class="drag-item" src="brownCircleOpacity_1.png">
+      </div>
+      <div class="flex-item">
+        <img class="drag-item" src="grayCircleOpacity_1.png">
+      </div>
+      <div class="flex-item">
+        <img class="drag-item" src="greenCircleOpacity_1.png">
+      </div>
+      <div class="flex-item">
+        <img class="drag-item" src="redCircleOpacity_1.png">
+      </div>
+      <div class="flex-item">
+        <img class="drag-item" src="고슴도치1.png">
+      </div>
+      <div class="flex-item">
+        <img class="drag-item" src="고슴도치2.png">
+      </div>
+      <div class="flex-item">
+        <img class="drag-item" src="고슴도치3.png">
+      </div>
+      <div class="flex-item">
+        <img class="drag-item" src="고슴도치4.png">
+      </div>
+      <div class="flex-item">
+        <img class="drag-item" src="고슴도치5.png">
+      </div>
+      <div class="flex-item">
+        <img class="drag-item" src="고슴도치6.png">
+      </div>
+      <div class="flex-item">
+        <img class="drag-item" src="redCircleOpacity_1.png">
+      </div>
+      <div class="flex-item">
+        <img class="drag-item" src="greenCircleOpacity_1.png">
+      </div>
+      <div class="flex-item">
+        <img class="drag-item" src="grayCircleOpacity_1.png">
+      </div>
+      <div class="flex-item">
+        <img class="drag-item" src="brownCircleOpacity_1.png">
+      </div>
+      <div class="flex-item">
+        <img class="drag-item" src="beigeCircleOpacity_1.png">
+      </div>
+      <div class="flex-item">
+        <img class="drag-item" src="blueCircleOpacity_1.png">
+      </div>
+  </section>
+  <footer>
+  </footer>
+  <script>
+    const drag_items = $(".drag-item")
+    var css_test_idx = 0;
+    var mousedown = 0;
+    var mouseup = 0;
+    for(let i = 0; i < drag_items.length; i++){
+      if(i > 5 && i < 12){
+        $(drag_items[i]).draggable({
+          revert : function(e,ui){
+            if(mousedown != mouseup){
+              mouseup = mousedown;
+              return true;
+            }else{
+              return false;
+            }
+          }
+        })
+        .css( 'cursor', 'move' )
+        .mousedown(function(e){ // mousedown 이벤트 생성
+          $(this).css('z-index', css_test_idx); // 클릭한 이미지만 z-index 증가시킴
+          css_test_idx++;
+          mousedown++;
+          // 그러면 이미지가 겹칠경우 클릭한 것이 항상 위에 표시됨
+        })
+        .mouseup(function(e){ 
+          mouseup++;
+        });
+        $(drag_items[i]).css("cursor","pointer");
+      }else{
+        $(drag_items[i]).css("cursor","dedfault");
+        $(drag_items[i]).css("box-shadow","4px 4px 4px gray");
+        $(drag_items[i]).css("border-radius","120px");
+        $(drag_items[i]).css("background","white");
+      }
+    }
+  </script>
+</body>
+
+</html>
